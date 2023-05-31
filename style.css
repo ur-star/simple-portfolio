@@ -52,7 +52,8 @@ li a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80vh;
+    min-height: 80vh;
+    max-height: fit-content;
     /* margin: 20px 0; */
 }
 
@@ -66,7 +67,7 @@ li a:hover {
     padding: 25px;
     background-color: rgba(48, 46, 46, 0.171);
     background: linear-gradient(45deg, rgba(53, 51, 107, 0.201) 0%, rgba(145, 145, 235, 0.197) 35%, rgba(22, 90, 96, 0.1741946778711485) 100%);
-
+    /* max-width: fit-content; */
     border-radius: 20px;
 
 }
@@ -87,7 +88,7 @@ li a:hover {
 
 .second-section {
     max-width: 90vw;
-    height: 90vh;
+    min-height: 90vh;
 
     margin: auto;
 }
@@ -155,7 +156,7 @@ li a:hover {
 .third-section{
     
     max-width: 90vw;
-    height: 90vh;
+    min-height: 90vh;
     margin: auto;
 }
 .third-section h1{
@@ -198,7 +199,7 @@ a{
     background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%,  rgba(0, 0, 0, 0) 100%);
 }
 .third-right img{
-    width: 100%;
+    width: auto;
     height: 100%;
     margin: 0 0 20px 40px;
 }
@@ -271,19 +272,48 @@ a{
     background-color: #fff;
     color: #333;
   }
-  @media screen and (max-width: 900px) {
+ 
+  @media only screen and (min-width: 1100px) {
+    body {
+        display: block;
+    }
+}
+
+/* Styles for small screens */
+@media only screen and (max-width: 1050px) {
+    *{
+        overflow-x: hidden;
+    }
     .col {
-      flex-basis: 100%;
-    }
-    section{
+        flex-basis: auto;
+      
+      }
+      nav{
+        text-align: center;
+      }
+      .right,.right-section{
+        display: none;
+      }
+      .left-section{
+        min-width:fit-content;
+      }
+      .third-section{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
-        flex-wrap: wrap;
         flex-basis: 100%;
-    }
-    .contents{
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: 100%;
-    }
-  }
+      }
+
+    
+      .third-left{
+        width: auto;
+        min-height: fit-content;
+      }
+      .third-right img{
+       width: 400px;
+       height: 450px;
+      }
+
+
+      
+}
