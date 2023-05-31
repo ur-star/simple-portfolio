@@ -284,10 +284,7 @@ a{
     *{
         overflow-x: hidden;
     }
-    .col {
-        flex-basis: auto;
-      
-      }
+  
       nav{
         text-align: center;
       }
@@ -296,18 +293,44 @@ a{
       }
       .left-section{
         min-width:fit-content;
+       margin: 30px 0 30px 0;
+      }
+      .second-section{
+        text-align: center;
       }
       .third-section{
         display: flex;
-        flex-wrap: wrap;
+        text-align: center;
         flex-direction: column;
         flex-basis: 100%;
       }
 
+      .content-about{
+        display: flex;
+       flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis: 100%;
+      }
     
       .third-left{
-        width: auto;
+        box-sizing: border-box;
+        width: 80%;
         min-height: fit-content;
+        margin: 10px auto;
+        padding: 5px;
+        overflow: scroll;
+      }
+      .third-left details{
+        width: 80%;
+        height: auto ;
+        
+      }
+      .third-right{
+        width: auto;
+    height: auto;
+    margin: 60px 0 0 0;
+    border-radius: 20px;
+    background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%, rgba(0, 0, 0, 0) 100%);
       }
       .third-right img{
        width: 400px;
