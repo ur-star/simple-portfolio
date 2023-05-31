@@ -285,6 +285,8 @@ a{
       nav{
         text-align: center;
         position: fixed;
+        background-color: rgb(37, 20, 89);
+
         top: 0;
         right: 0;
         width: 100%;
