@@ -149,6 +149,7 @@ li a:hover {
     100% {     background: linear-gradient(45deg, rgba(53, 51, 107, 0.201) 0%, rgba(145, 145, 235, 0.297) 95%, rgba(22, 90, 96, 0.1941946778711485) 100%);
     }
   }
+
 #animate{
     animation: color 1s infinite linear;
 
@@ -273,11 +274,7 @@ a{
     color: #333;
   }
  
-  @media only screen and (min-width: 1100px) {
-    body {
-        display: block;
-    }
-}
+ 
 
 /* Styles for small screens */
 @media only screen and (max-width: 1050px) {
@@ -287,13 +284,17 @@ a{
   
       nav{
         text-align: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
       }
       .right,.right-section{
         display: none;
       }
       .left-section{
         min-width:fit-content;
-       margin: 30px 0 30px 0;
+       margin: 40px  5px 20px 5px;
 
       }
       .second-section{
@@ -304,22 +305,26 @@ a{
         display: flex;
         text-align: center;
         flex-direction: column;
-        /* flex-basis: 100%; */
+ 
         height: auto;
       }
-
+      .card ul li{
+        list-style: square;
+       
+      }
       .content-about{
         display: flex;
        flex-wrap: wrap;
         flex-direction: column;
-        flex-basis: 100%;
+       margin: 20px -10px;
+
       }
     
       .third-left{
         box-sizing: border-box;
         width: 94vw;
         min-height: fit-content;
-        margin: 10px auto;
+        margin: 10px 5px;
         padding: 5px;
         overflow: scroll;
       }
