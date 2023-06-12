@@ -7,11 +7,26 @@ ul li{
  }
 
 body {
-    background-color: rgb(7, 7, 41);
+  background: linear-gradient(45deg, #aa6e25, #2e1948, #3d547a);
+	background-size: 150% 150%;
+	animation: gradient-animation 5s ease infinite;
     font-family: josefin sans;
     color: whitesmoke;
 
 }
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
 
 nav {
     display: flex;
@@ -96,7 +111,7 @@ li a:hover {
  .subtext {
     margin: 5px 0;
     padding: 2px;
-    color: grey;
+    color: rgb(172, 165, 165);
 }
 
 .second-section h1 {
@@ -290,6 +305,9 @@ a{
         top: 0;
         right: 0;
         width: 100%;
+      }
+      body{
+        background-color: #3f316c;
       }
       .right,.right-section{
         display: none;
