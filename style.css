@@ -308,6 +308,8 @@ a{
       }
       body{
         background-color: #3f316c;
+        background-size: 100% 100%;
+
       }
       .right,.right-section{
         display: none;
