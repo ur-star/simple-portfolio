@@ -14,6 +14,8 @@
 </head>
 
 <body>
+    <div id="cursor"></div>
+    <div id="stalker"></div>
     <header>
         <nav>
             <div class="left">Developer's Profile</div>
@@ -167,6 +169,23 @@
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
+       const cursor = document.querySelector('#cursor')
+       const stalker = document.querySelector('#stalker')
+
+       document.addEventListener('mousemove', event => {
+            stalker.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+            cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+        });
+
+        document.querySelectorAll('li').forEach(function(li) {
+        li.addEventListener('mouseenter', function() {
+            document.querySelector('main').classList.add('fade');
+        });
+        li.addEventListener('mouseleave', function() {
+            document.querySelector('main').classList.remove('fade');
+        });
+})
+
         var typed = new Typed('#element', {
             strings: ['MERN Developer', 'WEB3 Developer', "MEVN Developer", 'ServiceNow Administrator',],
             typeSpeed: 60,
