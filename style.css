@@ -109,7 +109,7 @@ li a:hover {
     
 }
 main.fade {
-  opacity: 0.5; 
+  opacity: 0.75; 
   transition: opacity 0.5s ease;
 }
 .left {
