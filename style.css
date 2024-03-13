@@ -25,7 +25,19 @@ html{
   pointer-events: none;
   background-color: rgb(151, 201, 250);
   transition: transform ease-out 70ms;
-  z-index: 1000
+  z-index: 1000;
+  animation: gradient-cursor 5s linear infinite;
+}
+@keyframes gradient-cursor {
+	0% {
+    background-color: rgba(219, 232, 244);
+	}
+	50% {
+    background-color: rgb(244, 225, 46);
+	}
+	100% {
+    background-color: rgba(244, 244, 213);
+	}
 }
 
 #stalker {
@@ -40,7 +52,20 @@ html{
   pointer-events: none;
   box-shadow: 0px 0px 9px 10px #8eddff22; 
   transition: transform ease-out 160ms;
-  z-index: 999
+  z-index: 999;
+  animation: gradient-stalker 5s linear infinite;
+
+}
+@keyframes gradient-stalker {
+	0% {
+    background-color: rgba(244, 244, 213, 0.62);
+	}
+	50% {
+    background-color: rgba(219, 232, 244, 0.62);
+	}
+	100% {
+    background-color: rgb(231, 209, 247,0.62);
+	}
 }
   }
 ul li{
@@ -49,7 +74,7 @@ ul li{
 body {
   background: linear-gradient(45deg, #aa6e25, #2e1948, #3d547a);
 	background-size: 150% 150%;
-	animation: gradient-animation 5s ease infinite;
+	animation: gradient-animation 5s linear infinite;
     font-family: josefin sans;
     color: whitesmoke;
 
@@ -78,6 +103,11 @@ nav {
     background-color: rgba(37, 20, 89, 0.982);
 }
 
+nav:hover{
+  background-color: rgba(43, 43, 43, 0.283);
+  transition: background 0.5s linear;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -95,7 +125,6 @@ nav ul > li:hover {
   transition: ease-in 0.2s;
 }
 
-
 li a {
     text-decoration: none;
     color: whitesmoke;
@@ -109,15 +138,28 @@ li a:hover {
     
 }
 main.fade {
-  opacity: 0.75; 
-  transition: opacity 0.5s ease;
+  /* opacity: 0.75; 
+  transition: opacity 0.5s ease; */
+  background-color: rgba(43, 43, 43, 0.283);
+  transition: background 0.5s linear;
 }
 .left {
     font-size: 2rem;
     font-weight: bold;
-
+    display: inline-block; 
+    background: linear-gradient(to right, blue, purple, pink, orange);
+    color: transparent; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
 }
-
+.left:hover{
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(90, 90, 90), rgb(6, 6, 6));
+  display: inline-block; 
+  color: transparent; 
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  transition: background 0.5s linear;
+}
 .first-section {
     display: flex;
     justify-content: space-around;
@@ -137,8 +179,11 @@ main.fade {
     padding: 25px;
     background-color: rgba(48, 46, 46, 0.171);
     background: linear-gradient(45deg, rgba(53, 51, 107, 0.201) 0%, rgba(145, 145, 235, 0.197) 35%, rgba(22, 90, 96, 0.1741946778711485) 100%);
-    /* max-width: fit-content; */
     border-radius: 20px;
+
+}
+#animecard{
+  padding: 25px;
 
 }
 
@@ -269,19 +314,29 @@ a{
     border-radius: 20px;
     background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%,  rgba(0, 0, 0, 0) 100%);
 }
+.card:hover {
+  background-color: black;
+  transition: background 0.5s ease-in-out;
+}
 .third-right img{
     width: auto;
     height: 100%;
     margin: 0 0 20px 40px;
 }
 
-
-.container {
+  .fourth-section{
     max-width: 80vw;
     margin: 40px auto;
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.199);
   }
 
 .container  h1 {
