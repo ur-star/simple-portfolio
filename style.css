@@ -30,13 +30,13 @@ html{
 }
 @keyframes gradient-cursor {
 	0% {
-    background-color: rgba(219, 232, 244);
+    background-color: #A2DDDF;
 	}
 	50% {
-    background-color: rgb(244, 225, 46);
+    background-color: #AAE2E4;
 	}
 	100% {
-    background-color: rgba(244, 244, 213);
+    background-color: #89D2DC;
 	}
 }
 
