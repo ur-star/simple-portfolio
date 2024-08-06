@@ -72,7 +72,7 @@ ul li{
     list-style: none;
  }
 body {
-  background: linear-gradient(45deg, #aa6e25, #2e1948, #3d547a);
+  background: linear-gradient(45deg, #A2DDDF, #AAE2E4, #89D2DC);
 	background-size: 150% 150%;
 	animation: gradient-animation 5s linear infinite;
     font-family: josefin sans;
