@@ -30,13 +30,13 @@ html{
 }
 @keyframes gradient-cursor {
 	0% {
-    background-color: rgba(219, 232, 244);
+    background-color: #A2DDDF;
 	}
 	50% {
-    background-color: rgb(244, 225, 46);
+    background-color: #AAE2E4;
 	}
 	100% {
-    background-color: rgba(244, 244, 213);
+    background-color: #89D2DC;
 	}
 }
 
@@ -72,7 +72,7 @@ ul li{
     list-style: none;
  }
 body {
-  background: linear-gradient(45deg, #aa6e25, #2e1948, #3d547a);
+  background: linear-gradient(45deg, #527e76, #498e91, #4aa3da);
 	background-size: 150% 150%;
 	animation: gradient-animation 5s linear infinite;
     font-family: josefin sans;
@@ -455,16 +455,14 @@ a{
       }
       .third-right{
         width: auto;
-    height: auto;
-    margin: 60px 0 0 0;
-    border-radius: 20px;
-    background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%, rgba(0, 0, 0, 0) 100%);
+        height: auto;
+        margin: 60px 0 0 0;
+        border-radius: 20px;
+        background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%, rgba(0, 0, 0, 0) 100%);
       }
       .third-right img{
        width: 400px;
        height: 450px;
       }
 
-
-      
 }
