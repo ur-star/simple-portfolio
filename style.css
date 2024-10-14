@@ -72,7 +72,7 @@ ul li{
     list-style: none;
  }
 body {
-  background: linear-gradient(45deg, #527e76, #498e91, #4aa3da);
+  background: linear-gradient(45deg, #436962, #428184, #3b8ec1);
 	background-size: 150% 150%;
 	animation: gradient-animation 5s linear infinite;
     font-family: josefin sans;
@@ -282,6 +282,7 @@ li a:hover {
     margin: 50px 0 0 25px;
     padding: 20px;
     border-radius: 20px;
+    text-align: justify;
 }
 .greeting{
     font-size: 1.5rem;
@@ -298,12 +299,18 @@ a{
  color:rgb(132, 170, 244);
 }
 .third-right{
-    width: 40vw;
-    height: 60vh;
-    margin: 80px 0 0 320px;
-    border-radius: 20px;
-    background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%,  rgba(0, 0, 0, 0) 100%);
+  box-sizing: border-box;
+  width: 40vw;
+  height: 60vh;
+  margin: 150px 0 0 320px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, rgba(231, 231, 237, 0.201) 0%, rgba(0, 0, 0, 0) 100%);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border-radius: 25%;
 }
+
 .card:hover {
   background-color: black;
   transition: background 0.5s ease-in-out;
@@ -311,7 +318,7 @@ a{
 .third-right img{
     width: auto;
     height: 100%;
-    margin: 0 0 20px 40px;
+    margin: 20px 0 0 40px;
 }
 
   .fourth-section{
@@ -393,6 +400,7 @@ a{
 @media only screen and (max-width: 1050px) {
     *{
         overflow-x: hidden;
+        box-sizing: border-box !important;
     }
   
       nav{
