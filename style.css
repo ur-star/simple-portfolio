@@ -100,12 +100,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: rgba(37, 20, 89, 0.982);
-}
-
-nav:hover{
-  background-color: rgba(43, 43, 43, 0.283);
-  transition: background 0.5s linear;
+    background-color: rgba(85, 53, 179, 0);
 }
 
 nav ul {
@@ -121,7 +116,7 @@ nav ul li {
 nav ul > li:hover {
   padding: 0 0 5px 0;
   border-bottom: 3px solid rgb(157, 227, 255) ;
-  box-shadow: rgba(166, 236, 250, 0.553) 0px 25px 20px -8px;   
+  box-shadow: rgba(166, 236, 250, 0) 0px 25px 20px -8px;   
   transition: ease-in 0.2s;
 }
 
@@ -137,17 +132,12 @@ li a:hover {
     transition: ease-in 0.2s;
     
 }
-main.fade {
-  /* opacity: 0.75; 
-  transition: opacity 0.5s ease; */
-  background-color: rgba(43, 43, 43, 0.283);
-  transition: background 0.5s linear;
-}
+
 .left {
     font-size: 2rem;
     font-weight: bold;
     display: inline-block; 
-    background: linear-gradient(to right, blue, purple, pink, orange);
+    background: linear-gradient(to right, rgb(238, 250, 150), rgb(240, 213, 94), rgb(251, 191, 80));
     color: transparent; 
     background-clip: text; 
     -webkit-background-clip: text; 
@@ -325,7 +315,7 @@ a{
 }
 
   .fourth-section{
-    max-width: 80vw;
+    max-width: 90vw;
     margin: 50px auto;
     border: 1px solid #ccc;
     border-radius: 4px;
