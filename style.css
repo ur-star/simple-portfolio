@@ -124,7 +124,7 @@ li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: #3c4a4a; /* Darker yellowish grey */
   padding: 40px 20px;
 }
@@ -282,7 +282,7 @@ li a:hover {
 .fourth-section {
   background-color: #445d50; /* Darker reddish grey */
   color: white;
-  height: 60dvh;
+  height: 100dvh;
   padding: 50px 20px;
 }
 
@@ -372,10 +372,11 @@ li a:hover {
   }
 
    .right-section {
-    margin: 20px auto;
     width: 100%;
+    text-align: center;
   }
   .right-section img{
+  
     margin: 0 auto;
   }
 
